@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SearchMapKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vbq-72-6ss">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="568"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-c9-c10">
+                                <rect key="frame" x="140" y="503" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8NQ-Qx-Uav"/>
+                                    <constraint firstAttribute="width" constant="40" id="mSA-fD-HZW"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMenuClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GoM-ra-YWE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJh-eQ-UZe">
+                                <rect key="frame" x="145" y="453" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.27058823529999998" green="0.61176470589999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="旅馆">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHotelClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ndK-cg-foe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJi-iS-ZiZ">
+                                <rect key="frame" x="145" y="453" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="医院">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHospitalClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bXe-49-nZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Is-QY-SkH">
+                                <rect key="frame" x="145" y="453" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="超市">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSMClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6d1-n4-zxG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vbq-72-6ss" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="6sQ-bg-y0M"/>
+                            <constraint firstAttribute="centerX" secondItem="r8e-c9-c10" secondAttribute="centerX" id="ASU-ce-qHo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="r8e-c9-c10" secondAttribute="bottom" constant="25" id="BkO-P5-F3K"/>
+                            <constraint firstItem="IJh-eQ-UZe" firstAttribute="leading" secondItem="xJi-iS-ZiZ" secondAttribute="leading" id="GyS-KO-Yhj"/>
+                            <constraint firstItem="6Is-QY-SkH" firstAttribute="centerX" secondItem="r8e-c9-c10" secondAttribute="centerX" id="KPr-eV-D2v"/>
+                            <constraint firstItem="xJi-iS-ZiZ" firstAttribute="baseline" secondItem="IJh-eQ-UZe" secondAttribute="baseline" id="KQ3-dj-Ro6"/>
+                            <constraint firstItem="6Is-QY-SkH" firstAttribute="baseline" secondItem="IJh-eQ-UZe" secondAttribute="baseline" id="amp-Ne-B4S"/>
+                            <constraint firstItem="IJh-eQ-UZe" firstAttribute="leading" secondItem="6Is-QY-SkH" secondAttribute="leading" id="hXi-uu-kho"/>
+                            <constraint firstItem="r8e-c9-c10" firstAttribute="top" secondItem="xJi-iS-ZiZ" secondAttribute="bottom" constant="20" id="lxN-Ew-a3Q"/>
+                            <constraint firstItem="vbq-72-6ss" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="miJ-zn-AHR"/>
+                            <constraint firstItem="vbq-72-6ss" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="qKV-ah-HhR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vbq-72-6ss" secondAttribute="trailing" constant="-26" id="wP0-vc-oOh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnHospital" destination="xJi-iS-ZiZ" id="HLI-qo-tW7"/>
+                        <outlet property="btnHotel" destination="IJh-eQ-UZe" id="1TT-ss-B7I"/>
+                        <outlet property="btnMenu" destination="r8e-c9-c10" id="eY9-zA-qUX"/>
+                        <outlet property="btnSM" destination="6Is-QY-SkH" id="jIE-pF-l09"/>
+                        <outlet property="mapView" destination="vbq-72-6ss" id="ZRJ-JX-5rd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="512" height="512"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
